@@ -1,2 +1,11 @@
 #Target files
 Target
+
+#Settings File
+.settings
+
+#Class File
+.classpath
+
+#Project File
+.project
