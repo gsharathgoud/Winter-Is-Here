@@ -1,0 +1,36 @@
+<section id="home" class="bg-white" data-target="local-scroll" data-sly-use.info="com.portfolio.core.use.MyInfoComp">
+    <div class="section-content">
+        <img class="img-circle mb-40 visible-sm visible-xs" src="/etc/designs/my-portfolio/clientlibs/img/avatars/avatar_square_sm.jpg" alt="">
+        <h1 class="mb-0">I'm ${info.myPortfolioBean.myName}</h1>
+        <h3 class="text-muted"><span class="typing">${info.myPortfolioBean.typing}</span></h3>
+        <hr class="sep-line">
+        
+        <div class="row">
+            <div class="col-sm-4">
+                <dl class="description-2">
+                    <dt>Experience Level:</dt>
+                    <dd>${info.myPortfolioBean.experience}</dd>
+                </dl>
+            </div>
+            <div class="col-sm-4">
+                <dl class="description-2">
+                    <dt>E-mail:</dt>
+                    <dd><a href="#">${info.myPortfolioBean.emailAddress}</a></dd>
+                </dl>
+            </div>
+            <div class="col-sm-4">
+                <dl class="description-2">
+                    <dt>Folow me!</dt>
+                    <dd>
+                        <a data-sly-test="${info.myPortfolioBean.twitter}" href="https://twitter.com/sharathgoud_sk" target="blank" class="icon icon-twitter icon-sm icon-circle"><i class="fa fa-twitter"></i></a>
+                        <a data-sly-test="${info.myPortfolioBean.google}" href="https://google.com/+SharathGoud" target="blank" class="icon icon-google-plus icon-sm icon-circle"><i class="fa fa-google-plus"></i></a>
+                        <a data-sly-test="${info.myPortfolioBean.linkedin}" href="https://linkedin.com/in/sharathg22" target="blank" class="icon icon-linkedin icon-sm icon-circle"><i class="fa fa-linkedin"></i></a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <a href="#works" class="btn btn-section btn-primary">
+        <span class="i-before i"><i class="ti-desktop"></i><i class="ti-arrow-down"></i></span>Check my <strong>works</strong>
+    </a>
+</section>

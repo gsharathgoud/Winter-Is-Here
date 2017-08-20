@@ -1,0 +1,51 @@
+<!--/*
+    Copyright 2016 Adobe Systems Incorporated
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+
+
+<header id="header" class="bg-primary">
+
+	<!-- Top Bar -->
+    <div id="top-bar">
+	<sly data-sly-resource="${@path='breadcrump',resourceType='my-portfolio/components/content/breadcrump'}"></sly>
+    </div>
+	<!-- Top Bar -->
+
+	<!-- Navigation Bar -->
+	<div id="nav-bar" class="container">
+		<nav>
+			<ul id="nav-primary" class="nav nav-primary">
+				<li class="icon-link"><a href="#home"><i class="fa fa-home"></i></a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#works">Works</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#references">References</a></li>
+				<li><a href="#latest-posts">Latest Posts</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li class="icon-link"><a href="#" class="panel-toggle" data-toggle="panel"><span><span></span></span></a></li>
+			</ul>
+		</nav>
+
+		<div class="mobile-nav clearfix">
+			<div class="owner">
+				<img src="/etc/designs/my-portfolio/clientlibs/img/avatars/avatar_square_sm.jpg" alt="">
+				<span class="name">Mat Webber</span>
+			</div>
+			<a href="#" class="panel-toggle" data-toggle="panel"><span><span></span></span></a>
+		</div>
+	</div>
+
+</header>

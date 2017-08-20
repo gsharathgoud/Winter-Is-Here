@@ -1,0 +1,4 @@
+#base=js
+jquery-1.12.3.min.js
+plugins.js
+core.js

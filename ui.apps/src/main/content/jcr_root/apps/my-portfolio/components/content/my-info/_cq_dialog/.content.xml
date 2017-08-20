@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="About Me"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Basic Info"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Please enter your name"
+                                fieldLabel="Name :"
+                                name="./myName"
+                                required="{Boolean}true"/>
+                            <typing
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Please enter your role"
+                                fieldLabel="Role :"
+                                name="./typing"
+                                required="{Boolean}true"/>
+                            <experience
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Please enter your experience level"
+                                fieldLabel="Experience Level :"
+                                name="./experience"
+                                required="{Boolean}true"/>
+                            <email
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Please enter your email address"
+                                fieldLabel="Email Address :"
+                                name="./emailAddress"
+                                required="{Boolean}true"/>
+                        </items>
+                    </column>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Social"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <twitter
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Want to share your twitter profile?"
+                                fieldLabel="Twitter"
+                                name="./twitter"
+                                text="Twitter"
+                                value="true"/>
+                            <google
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Want to share your google profile?"
+                                fieldLabel="Google"
+                                name="./google"
+                                text="Google"
+                                value="true"/>
+                            <linkedin
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Want to share your linkedin profile?"
+                                fieldLabel="Linkedin"
+                                name="./linkedin"
+                                text="Linkedin"
+                                value="true"/>
+                        </items>
+                    </column>
+                </items>
+            </tab2>
+        </items>
+    </content>
+</jcr:root>

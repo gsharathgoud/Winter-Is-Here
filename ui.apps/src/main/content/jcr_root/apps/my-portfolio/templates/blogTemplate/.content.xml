@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="The blogging template of my portfolio project."
+    jcr:primaryType="cq:Template"
+    jcr:title="Blog Template"
+    allowedPaths="[/content/my-portfolio/english(/.*)?,/content/my-portfolio/spanish(/.*)?]"
+    ranking="{Long}100">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="my-portfolio/components/structure/blog"/>
+</jcr:root>

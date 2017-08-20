@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="About Me"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Basic Info"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <text
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Please enter your name"
+                    fieldLabel="Name :"
+                    name="./myName"
+                    xtype="textfield"/>
+                <typing
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Please enter your role"
+                    fieldLabel="Role :"
+                    name="./typing"
+                    xtype="textfield"/>
+                <experience
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Please enter your experience level"
+                    fieldLabel="Experience Level :"
+                    name="./experience"
+                    xtype="textfield"/>
+                <email
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Please enter your email address"
+                    fieldLabel="Email Address :"
+                    name="./emailAddress"
+                    xtype="textfield"/>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Social"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <twitter
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Want to share your twitter profile?"
+                    fieldLabel="Twitter"
+                    inputValue="true"
+                    name="./twitter"
+                    type="checkbox"
+                    xtype="selection"/>
+                <google
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Want to share your google profile?"
+                    fieldLabel="Google"
+                    inputValue="true"
+                    name="./google"
+                    type="checkbox"
+                    xtype="selection"/>
+                <linkedin
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Want to share your linkedin profile?"
+                    fieldLabel="Linkedin"
+                    inputValue="true"
+                    name="./linkedin"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab2>
+    </items>
+</jcr:root>

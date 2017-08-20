@@ -1,0 +1,44 @@
+<!--/*
+    Copyright 2016 Adobe Systems Incorporated
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+
+<head data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly data-sly-call="${clientlib.css @ categories='test'}"/>
+<!-- Meta -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- CSS Styles -->
+<meta data-sly-call="${clientLib.css @ categories='my.portfolio'}" data-sly-unwrap/>
+
+<!-- Title -->
+<title>I'm Sharath</title>
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="/etc/designs/my-portfolio/clientlibs/img/favicon.png">
+<link rel="apple-touch-icon" href="/etc/designs/my-portfolio/clientlibs/img/favicon_60x60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/my-portfolio/clientlibs/img/favicon_76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/my-portfolio/clientlibs/img/favicon_120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/etc/designs/my-portfolio/clientlibs/img/favicon_152x152.png">
+
+<!-- Google Web Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+
+
+<!-- CSS Theme -->
+<link rel="stylesheet" id="theme" href="${pageProperties.themeColor}" />
+
+</head>

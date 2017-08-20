@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Breadcrump"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Basic Info"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <home
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Please select home page"
+                    fieldLabel="Home Page :"
+                    name="./homePage"
+                    rootPath="/content/my-portfolio/english"
+                    xtype="pathfield"/>
+                <typing
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Please select blog page"
+                    fieldLabel="Blog Page :"
+                    name="./blogPage"
+                    rootPath="/content/my-portfolio/english"
+                    xtype="pathfield"/>
+                <experience
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Please select documentation page"
+                    fieldLabel="Docs Page :"
+                    name="./docsPage"
+                    rootPath="/content/my-portfolio/english"
+                    xtype="pathfield"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

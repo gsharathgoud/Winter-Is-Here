@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/my-portfolio"/>
+
+    <filter root="/apps/sling/servlet/errorhandler"/>
+
+
+    <filter root="/conf/my-portfolio" mode="merge"/>
+
+
+    <filter root="/etc/clientlibs/my-portfolio"/>
+
+
+    <filter root="/etc/designs/my-portfolio">
+        <include pattern="/etc/designs/my-portfolio/jcr:content"/>
+		<include pattern="/etc/designs/my-portfolio/.*"/>
+        <include pattern="/etc/designs/my-portfolio/jcr:content/clientlibs"/>
+        <include pattern="/etc/designs/my-portfolio/jcr:content/clientlibs/.*"/>
+
+    </filter>
+
+</workspaceFilter>
